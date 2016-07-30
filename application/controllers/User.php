@@ -9,6 +9,9 @@ class User extends CI_Controller {
             $this->load->model('user_model');
         }
 
+
+
+
     
         public function all(){
             $users = $this->user_model->get();
