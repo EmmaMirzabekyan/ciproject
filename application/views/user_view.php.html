@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html>
+    <head> 
+        <title> </title>
+    </head>
+    <body> 
+        <?php foreach($user as $item);?>
+        <p> <?= $item['id']; ?> </p>
+        <p> <?= $item['name']; ?> </p>
+        <p> <?= $item['email']; ?> </p>
+        <? php endforeach; ?>
+        
+       <?php echo $this->pagination->create_links();?>
+
+    </body>
+</html>
